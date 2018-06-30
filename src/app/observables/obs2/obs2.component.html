@@ -1,0 +1,12 @@
+<div>
+    <a [routerLink]="['']" routerLinkActive="router-link-active">Back</a>
+</div>
+
+<h1>Angular Component Using Observables!</h1>
+<h2 style="margin-bottom: 0">Values:</h2>
+<div *ngFor="let value of values">{{ value }}</div>
+<div *ngIf="finished">Finished</div>
+
+<hr>
+<h1>Using async pipe!</h1>
+<div>{{ data|async }}</div>

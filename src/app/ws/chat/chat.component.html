@@ -1,0 +1,4 @@
+<textarea cols="100" rows="20">{{ chat }}</textarea><br/>
+<input #input type="text" size="100"/><br/>
+<input (click)="sendMessage(input)" type="button" value="Send"/>
+<div> {{ status }}</div>

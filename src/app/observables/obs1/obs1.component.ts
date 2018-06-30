@@ -16,7 +16,7 @@ export class Obs1Component implements OnInit {
     const button = document.querySelector('button');
     fromEvent(button, 'click').pipe(
       map(event => 1),
-      scan(count => count + 1)
+      scan(count => count + 1, 0)
     )
     .subscribe(count => console.log(count));
   }

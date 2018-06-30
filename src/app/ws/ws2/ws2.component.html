@@ -1,0 +1,11 @@
+<div>
+  <a [routerLink]="['']" routerLinkActive="router-link-active">Back</a>
+</div>
+
+<h1>Simplest Subject wo geht</h1>
+<input type="text" #input>
+<button (click)="sendMessage(input)">Click</button>
+
+<div *ngFor="let message of messages">
+  {{ message }}
+</div>
